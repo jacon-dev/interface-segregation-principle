@@ -7,8 +7,8 @@ namespace InterfaceSegregation
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public decimal AnnualSalary { get; set; }
-        public List<string> Benefits { get; set; }
+        public decimal FteAnnualSalary { get; set; }
+        public List<string> FteBenefits { get; set; }
         public decimal CalculateSalary();
 
     }
@@ -17,11 +17,11 @@ namespace InterfaceSegregation
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public decimal AnnualSalary { get; set; }
-        public List<string> Benefits { get; set; }
+        public decimal FteAnnualSalary { get; set; }
+        public List<string> FteBenefits { get; set; }
         public decimal CalculateSalary()
         {
-            return AnnualSalary / 12;
+            return FteAnnualSalary / 12;
         }
     }
 }
